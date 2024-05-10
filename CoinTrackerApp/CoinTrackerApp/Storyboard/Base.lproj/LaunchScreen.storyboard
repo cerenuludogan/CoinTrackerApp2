@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22684"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="EHf-IW-A2E">
+            <objects>
+                <viewController id="01J-lp-oVM" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="blockchain" translatesAutoresizingMaskIntoConstraints="NO" id="JgY-kq-xY5">
+                                <rect key="frame" x="87" y="350" width="219" height="152"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cyrpto Tracker" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jlD-IO-fmq">
+                                <rect key="frame" x="16" y="510" width="361" height="71"/>
+                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="50"/>
+                                <color key="textColor" red="0.94117647059999998" green="0.0" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" red="0.12954100966453552" green="0.14964443445205688" blue="0.19606846570968628" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="JgY-kq-xY5" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="291" id="AeM-Mw-njg"/>
+                            <constraint firstItem="jlD-IO-fmq" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="NiL-8S-6NN"/>
+                            <constraint firstItem="jlD-IO-fmq" firstAttribute="top" secondItem="JgY-kq-xY5" secondAttribute="bottom" constant="8" symbolic="YES" id="Qgm-Fd-0Cu"/>
+                            <constraint firstItem="JgY-kq-xY5" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="SEz-WG-FQ1"/>
+                            <constraint firstItem="JgY-kq-xY5" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="87" id="efx-6m-yaB"/>
+                            <constraint firstItem="JgY-kq-xY5" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="nmr-zZ-6Mb"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="jlD-IO-fmq" secondAttribute="trailing" constant="16" id="pqT-kl-GRF"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="53" y="375"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="voe-Vf-5MD">
+            <objects>
+                <viewController id="5Ip-bA-hvS" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="F3X-7x-0CN">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="YQm-zb-jxd"/>
+                        <color key="backgroundColor" red="0.12954100966453552" green="0.14964443445205688" blue="0.19606846570968628" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="md4-pG-k2m" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="746" y="375"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="blockchain" width="512" height="512"/>
+    </resources>
+</document>

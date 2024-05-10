@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="EZW-gy-Aj1">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22684"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="bKL-B2-GmP">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8So-Jm-k24" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <viewController id="trc-N6-Rh2" customClass="ViewController" customModule="CoinTrackerApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="fYy-tt-43a">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="Ndz-fy-1Ds"/>
+                        <color key="backgroundColor" red="0.17641085386276245" green="0.21689972281455994" blue="0.30514112114906311" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </view>
+                </viewController>
+            </objects>
+            <point key="canvasLocation" x="3353" y="131"/>
+        </scene>
+        <!--Ranking Lİst-->
+        <scene sceneID="m7M-hJ-SqI">
+            <objects>
+                <viewController id="TsD-hF-Yug" customClass="HomeViewController" customModule="CoinTrackerApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="YlH-2K-JCd">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="xBZ-nC-QL0">
+                                <rect key="frame" x="0.0" y="103" width="393" height="715"/>
+                                <color key="backgroundColor" red="0.17641085386276245" green="0.21689972281455994" blue="0.30514112114906311" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6AA-e9-fXW"/>
+                        <color key="backgroundColor" red="0.17641085386276245" green="0.21689972281455994" blue="0.30514112114906311" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="xBZ-nC-QL0" firstAttribute="leading" secondItem="6AA-e9-fXW" secondAttribute="leading" id="Lwd-Lb-EMa"/>
+                            <constraint firstItem="xBZ-nC-QL0" firstAttribute="top" secondItem="6AA-e9-fXW" secondAttribute="top" id="Wlf-mw-i1R"/>
+                            <constraint firstItem="6AA-e9-fXW" firstAttribute="bottom" secondItem="xBZ-nC-QL0" secondAttribute="bottom" id="ZGZ-DG-Nm3"/>
+                            <constraint firstItem="6AA-e9-fXW" firstAttribute="trailing" secondItem="xBZ-nC-QL0" secondAttribute="trailing" id="wRd-qd-oGI"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Ranking Lİst" id="s4g-vf-v8H"/>
+                    <connections>
+                        <outlet property="tableView" destination="xBZ-nC-QL0" id="7Gn-we-WxM"/>
+                        <segue destination="ZzN-Vu-za9" kind="show" identifier="ToDetailVC" id="EWl-Eo-y0C"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Cil-td-hl7" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="6243.5114503816794" y="805.63380281690149"/>
+        </scene>
+        <!--Detail View Controller-->
+        <scene sceneID="Lf5-Yb-yIb">
+            <objects>
+                <viewController id="ZzN-Vu-za9" customClass="DetailViewController" customModule="CoinTrackerApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="x8B-d9-Rae">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FzC-Ha-Wsb">
+                                <rect key="frame" x="16" y="310" width="641.33333333333337" height="380"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="tM1-Ib-LxK">
+                                        <rect key="frame" x="16" y="8" width="617.33333333333337" height="364"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nMx-z6-CWp">
+                                                <rect key="frame" x="0.0" y="0.0" width="617.33333333333337" height="110"/>
+                                                <subviews>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="ftM-F7-aH0">
+                                                        <rect key="frame" x="0.0" y="0.0" width="60" height="110"/>
+                                                        <subviews>
+                                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Vji-id-SBa">
+                                                                <rect key="frame" x="0.0" y="25" width="60" height="60"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="width" constant="60" id="hrd-3W-HoB"/>
+                                                                    <constraint firstAttribute="height" constant="60" id="sbO-yb-ymK"/>
+                                                                </constraints>
+                                                            </imageView>
+                                                        </subviews>
+                                                    </stackView>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="ZCD-tU-bMK">
+                                                        <rect key="frame" x="60" y="0.0" width="557.33333333333337" height="110"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fYD-yc-dri">
+                                                                <rect key="frame" x="253.66666666666669" y="0.0" width="50" height="50"/>
+                                                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="17"/>
+                                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o46-2x-YvH">
+                                                                <rect key="frame" x="253.66666666666669" y="50" width="50" height="60"/>
+                                                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="17"/>
+                                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                        </subviews>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="110" id="J9H-VO-UwC"/>
+                                                        </constraints>
+                                                    </stackView>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="r74-UL-5OH">
+                                                <rect key="frame" x="0.0" y="115" width="617.33333333333337" height="120"/>
+                                                <subviews>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="vOK-z8-Taj">
+                                                        <rect key="frame" x="0.0" y="0.0" width="308.66666666666669" height="120"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Current Price" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YHd-bv-QQC">
+                                                                <rect key="frame" x="0.0" y="0.0" width="308.66666666666669" height="40"/>
+                                                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="17"/>
+                                                                <color key="textColor" red="0.43762069940567017" green="0.48784142732620239" blue="0.58919697999954224" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0GQ-TT-zww">
+                                                                <rect key="frame" x="0.0" y="40" width="308.66666666666669" height="40"/>
+                                                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="17"/>
+                                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RWs-hy-hTz">
+                                                                <rect key="frame" x="0.0" y="80" width="308.66666666666669" height="40"/>
+                                                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="17"/>
+                                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                        </subviews>
+                                                    </stackView>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="WeT-ob-vPR">
+                                                        <rect key="frame" x="308.66666666666663" y="0.0" width="308.66666666666663" height="120"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5DL-pc-oSl">
+                                                                <rect key="frame" x="0.0" y="0.0" width="308.66666666666669" height="60"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="width" constant="175" id="P10-gj-a5T"/>
+                                                                </constraints>
+                                                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="17"/>
+                                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EWy-qr-UZu">
+                                                                <rect key="frame" x="0.0" y="60" width="308.66666666666669" height="60"/>
+                                                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="17"/>
+                                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                        </subviews>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="120" id="otd-IC-Skm"/>
+                                                        </constraints>
+                                                    </stackView>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="eAL-Rj-EW0">
+                                                <rect key="frame" x="0.0" y="240" width="617.33333333333337" height="124"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Overview" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Cf-si-R0S">
+                                                        <rect key="frame" x="0.0" y="0.0" width="617.33333333333337" height="99.666666666666671"/>
+                                                        <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="22"/>
+                                                        <color key="textColor" red="0.43762069940567017" green="0.48784142732620239" blue="0.58919697999954224" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" text="CoinTracker is the ideal application for tracking and managing cryptocurrencies." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="U1X-3R-Wja">
+                                                        <rect key="frame" x="0.0" y="99.666666666666629" width="617.33333333333337" height="24.333333333333329"/>
+                                                        <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="17"/>
+                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" red="0.17641085386276245" green="0.21689972281455994" blue="0.30514112114906311" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="tM1-Ib-LxK" firstAttribute="top" secondItem="FzC-Ha-Wsb" secondAttribute="top" constant="8" id="7dc-XV-wlX"/>
+                                    <constraint firstItem="tM1-Ib-LxK" firstAttribute="leading" secondItem="FzC-Ha-Wsb" secondAttribute="leading" constant="16" id="R3P-BX-iT8"/>
+                                    <constraint firstAttribute="bottom" secondItem="tM1-Ib-LxK" secondAttribute="bottom" constant="8" id="Rzy-zg-3eJ"/>
+                                    <constraint firstAttribute="height" constant="380" id="bNR-hw-oQD"/>
+                                    <constraint firstAttribute="trailing" secondItem="tM1-Ib-LxK" secondAttribute="trailing" constant="8" id="d1v-lI-evN"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="h74-uA-8Y0"/>
+                        <color key="backgroundColor" red="0.12954100966453552" green="0.14964443445205688" blue="0.19606846570968628" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="h74-uA-8Y0" firstAttribute="bottom" secondItem="FzC-Ha-Wsb" secondAttribute="bottom" constant="128" id="Tof-xK-U9p"/>
+                            <constraint firstItem="h74-uA-8Y0" firstAttribute="trailing" secondItem="FzC-Ha-Wsb" secondAttribute="trailing" constant="16" id="bd3-aa-ZlB"/>
+                            <constraint firstItem="h74-uA-8Y0" firstAttribute="trailing" secondItem="FzC-Ha-Wsb" secondAttribute="trailing" constant="16" id="gVC-eJ-jPy"/>
+                            <constraint firstItem="FzC-Ha-Wsb" firstAttribute="leading" secondItem="h74-uA-8Y0" secondAttribute="leading" constant="16" id="pPq-xb-l5V"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="xRg-LA-rdt"/>
+                    <connections>
+                        <outlet property="cardView" destination="FzC-Ha-Wsb" id="iiw-5O-6uJ"/>
+                        <outlet property="coinImage" destination="Vji-id-SBa" id="i8e-87-XIn"/>
+                        <outlet property="coinName" destination="fYD-yc-dri" id="CQA-bd-bfe"/>
+                        <outlet property="coinPrice" destination="0GQ-TT-zww" id="eQi-RI-kgl"/>
+                        <outlet property="coinRank" destination="RWs-hy-hTz" id="q2t-m6-XJN"/>
+                        <outlet property="coinSymbol" destination="o46-2x-YvH" id="fHd-tR-EzP"/>
+                        <outlet property="highLabel" destination="5DL-pc-oSl" id="ONX-BW-wHA"/>
+                        <outlet property="lowLabel" destination="EWy-qr-UZu" id="JrI-cI-6in"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="JQM-lF-B9q" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="7223.6641221374039" y="805.63380281690149"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="4vj-rL-IkS">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="EZW-gy-Aj1" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="ghL-6h-lM7">
+                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="TsD-hF-Yug" kind="relationship" relationship="rootViewController" id="7CM-wQ-wiD"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="oJS-rK-6xr" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5316.7938931297704" y="805.63380281690149"/>
+        </scene>
+    </scenes>
+</document>
